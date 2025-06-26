@@ -1,0 +1,350 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<style>
+    body {
+        background-image: url('https://i.pinimg.com/originals/6e/be/1a/6ebe1ab94315672fc7e9e9a88cad8939.jpg');
+        background-size: cover;  
+    }
+
+/*Edit*/
+    .bn632-hover {
+        width: 160px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin: 20px;
+        height: 55px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+        background-position: 100% 0;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:focus {
+        outline: none;
+    }
+
+    .bn632-hover.bn19 {
+        background-image: linear-gradient(
+            to right,
+            #f5ce62,
+            #e43603,
+            #fa7199,
+            #e85a19
+        );
+        box-shadow: 0 4px 15px 0 rgba(229, 66, 10, 0.75);
+    }
+
+/*Delete*/
+    .bn632-hover {
+        width: 160px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin: 20px;
+        height: 55px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+        background-position: 100% 0;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:focus {
+        outline: none;
+    }
+
+    .bn632-hover.bn28 {
+        background-image: linear-gradient(
+            to right,
+            #eb3941,
+            #f15e64,
+            #e14e53,
+            #e2373f
+        );
+        box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+    }
+/*All posts*/
+    .bn632-hover {
+        width: 160px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #fff;
+        cursor: pointer;
+        margin: 20px;
+        height: 55px;
+        text-align: center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        -o-transition: all 0.4s ease-in-out;
+        -webkit-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+        background-position: 100% 0;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:focus {
+        outline: none;
+    }
+
+    .bn632-hover.bn24 {
+        background-image: linear-gradient(
+            to right,
+            #6253e1,
+            #852d91,
+            #a3a1ff,
+            #f24645
+            );
+        box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    }
+
+/*Add Comment*/
+    .bn632-hover {
+        width: 140px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        cursor: pointer;
+        margin: 17px;
+        height: 45px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+        background-position: 100% 0;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:focus {
+        outline: none;
+    }
+
+    .bn632-hover.bn26 {
+        background-image: linear-gradient(
+            to right,
+            #25aae1,
+            #4481eb,
+            #04befe,
+            #3f86ed
+        );
+        box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    }
+
+/*Reply*/
+    .bn632-hover {
+        width: 130px;
+        font-size: 14px;
+        font-weight: 400;
+        color: #fff;
+        cursor: pointer;
+        margin: 15px;
+        height: 40px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+        background-position: 100% 0;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:focus {
+        outline: none;
+    }
+
+    .bn632-hover.bn21 {
+        background-image: linear-gradient(
+            to right,
+            #fc6076,
+            #ff9a44,
+            #ef9d43,
+            #e75516
+        );
+        box-shadow: 0 4px 15px 0 rgba(252, 104, 110, 0.75);
+    }
+
+/*Like*/ 
+    .bn632-hover {
+        width: 120px;
+        font-size: 14px;
+        font-weight: 200;
+        color: #fff;
+        cursor: pointer;
+        margin: 14px;
+        height: 40px;
+        text-align:center;
+        border: none;
+        background-size: 300% 100%;
+        border-radius: 50px;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:hover {
+        background-position: 100% 0;
+        transition: all .4s ease-in-out;
+        -o-transition: all .4s ease-in-out;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+    }
+
+    .bn632-hover:focus {
+        outline: none;
+    }
+
+    .bn632-hover.bn28 {
+        background-image: linear-gradient(
+            to right,
+            #eb3941,
+            #f15e64,
+            #e14e53,
+            #e2373f
+        );
+        box-shadow: 0 5px 15px rgba(242, 97, 103, 0.4);
+    }
+
+    aside {
+        padding: 0px;
+        width: 160px;
+        float: right;
+    }
+</style>
+
+    <br>
+    <div class="container-fluid">
+        <div class="card" >
+          <div class="card-body">
+              {%  if object.photo %}
+                <img class="card-img-top" src="{{ object.photo.url }}" alt="{{ object.title }}">
+              {% endif %}
+              <h1 class="card-title">{{ object.title }}</h1>
+              <h6 class="card-subtitle mb-2 text-muted">Muallif: {{ object.author }} | {{ object.date }}</h6>
+              <p class="card-text">{{ object.body | safe }}</p>
+              <a href="{% url 'article_edit' article.pk %}"><button class="bn632-hover bn19">Edit</button></a> |
+              <a href="{% url 'article_delete' article.pk %}"><button class="bn632-hover bn28">Delete</button></a> |
+              <a href="{% url 'article_list' %}"><button class="bn632-hover bn24">All Posts</button></a>
+          </div>
+        </div>
+        
+
+        <!--Comment-->
+            <div class="card">
+                <div class="card-header">Commentary</div>
+                {% if user.is_authenticated %}
+                <form method="post" action="{% url 'add_comment' article.id %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <h2 style="text-align: center">Add Comment</h2>
+                        <textarea name="comment" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    <br>
+                        <button type="submit" class="bn632-hover bn26">Add Comment</button>
+                    </div>
+                </form>
+                {% else %}
+                    <h2 style="text-align: center;"><a href="{% url 'login' %}">Please Login to post comment!</a></h2>
+                {% endif %}
+            <!--End Comment-->
+                <hr>  
+            {% for comment in article.get_comments %}
+            <div class="card-body">
+                <blockquote class="blockquote mb-0">
+                    <p>{{ comment.comment }}</p>
+                    <footer class="blockquote-footer">{{ comment.author }}</footer><br>   
+                </blockquote>
+                
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h6 class="panel-title">
+                            <h6 style="text-align: center;   background: linear-gradient(90deg, #1e39a5, #c50e07); background-size: auto; background-clip: border-box; -webkit-background-clip: text; background-clip: text; background-size: 300% 300%; -webkit-text-fill-color: transparent;"><a data-toggle="collapse" href="#collapse1">see replies</a></h6>
+                        </h6>
+                    </div>
+                    <hr>
+                    <div id="collapse1" class="panel-collapse collapse">
+                        <blockquote class="blockquote mb-0" style="margin-left: 30px; margin-right: 30px;">
+                            {% for reply in comment.replies.all %}
+                                <i>{{ reply.comment }}</i><br><br>
+                                <footer class="blockquote-footer" style="margin-left: 10px; margin-right: 10px;" >{{ comment.author }}</footer><br> 
+                            {% endfor %}   
+                        </blockquote>
+                    </div>
+                    </div>
+                </div>
+                   
+                <br>
+                
+                <form method="post" action="{% url 'add_comment' article.id %}">
+                    {% csrf_token %}
+                    <div class="mb-3">
+                        <input type="hidden" name="parent" value="{{ comment.id }}">
+                        <textarea name="comment" class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
+                    <br>
+                        <button type="submit" class="bn632-hover bn21">Reply</button>
+                    </div>
+                </form>
+                    <aside>
+                        <a type="button" id="like-button" href="/articles/rate/{{ article.id }}/">
+                            <button class="bn632-hover bn28">Like ({{ article.rates_count }})</button></a>
+                    </aside>
+            </div>
+                    <br><br>
+            {% endfor %}
+        </div>
+    </div>
+
+{% endblock content %}
